@@ -26,3 +26,26 @@ if st.button("Get the Weather forecast"):
     predicted_humidity = model_h.predict(custom_feature)
     st.write(f"Temperature: {predicted_temperature[0]}")
     st.write(f"Humidity: {predicted_humidity[0]}")
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: navy;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Display your content here
+# ...
+
+# Add footer "Made by Cognozire"
+st.markdown(
+    """
+    <footer style="color: white; text-align: center; margin-top: 30px;">
+    Made by Cognozire
+    </footer>
+    """,
+    unsafe_allow_html=True
+)
