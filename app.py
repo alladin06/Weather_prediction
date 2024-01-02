@@ -24,8 +24,8 @@ custom_feature = [[day_of_year]]
 if st.button("Get the Weather forecast"):
     predicted_temperature = model_t.predict(custom_feature)
     predicted_humidity = model_h.predict(custom_feature)
-    st.write(f"Temperature: {predicted_temperature[0]}")
-    st.write(f"Humidity: {predicted_humidity[0]}")
+    st.write(f"Temperature: {round(predicted_temperature[0],3)}")
+    st.write(f"Humidity: {round(predicted_humidity[0],3)}")
 st.markdown(
     """
     <style>
